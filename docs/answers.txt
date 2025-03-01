@@ -1,0 +1,54 @@
+1.Paste the console output you saved at the end of step 3.C (2 points)
+
+mmarse@Michaels-MacBook-Air assignment2 % git push https://github.com/mlm23e/assignment2.git
+Username for 'https://github.com': mlm23e
+Password for 'https://mlm23e@github.com': 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 605 bytes | 605.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/mlm23e/assignment2.git
+   f4975e5..31ecff8  master -> master
+
+
+
+2.How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+
+	There have been 9 commits, which was determined by using the following git command: "git rev-list --count master".
+
+
+3. When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+
+	Esteban Parra last modified the README.md file last on Wednesday, September 25, 2019 at 18:33:08. This was determined using the git command "git log ../README.md".
+
+
+4. Mention two reasons why branches are used in a Git repository (4 points) 
+
+	Branches allow developers to create another line of development that’s entirely isolated from the master/main branch, so that experimental or short-term work can be separated from production code. Branching also allows multiple developers to work in parallel without collisions, empowering each member to be autonomous and productive. 
+
+5. What is the difference between git log and git status? (4 points)
+
+	The ‘git status’ command can give information about the current working directory, such as whether the branch is up to date, if there anything to commit, and whether any files are staged or untracked. The ‘git log’ command gives information on the commit history for the branch.
+
+
+6. What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+
+	If the current working directory is './assignment2/', then the commend 'git log ./Vehicle.h' will present the commits for that particular file. If we want to present the commits for files in the repository assignment2.
+
+7. What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+
+	The command (git log --grep "string") can be used to see commits where the commit message contains the word "file."
+
+8. In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+
+	Inheritance is the mechanism by which one class (called a subclass) can inherit the fields and methods of an existing class (called a superclass), creating new classes based on existing ones. Polymorphism is the concept that allows objects of different classes to be treated as if they were objects of a common superclass, provisioning one interface to entities of different data types. Encapsulation is the bundling of data with the methods operating on those data into a class.
+
+9. What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+	
+	The difference is that a dictator makes the final decision regarding the project's vision and whether to push to the central repository, whereas an integration manager is primarily concerned with coordination and integration of developer contributions. In the "Dictator and Lieutenants" workflow, resposibility is distributed hierarchically with lieutenants aligning their work with the vision of the dictator as they handle the details of the developer pushes. Integration managers, being the main ones to push to the central repository, simply ensure the codebase remains stable.   
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+	The Dictator and Lieutenants workflow provides greater scalability, faster development cycles, and better utilization of expertise. Lieutenants are empowered to make decisions with their respective areas of expertise, allowing them to work independently without waiting for dictator approval. A centralized worklow would make it impossible to function effectively by the sheer volume of decision making required, giving rise to bottlenecks in development.
