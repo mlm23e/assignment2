@@ -1,3 +1,6 @@
+Git Lab Tutorials: Feb 28, 2025
+Github Account Setup: Jan 31, 2025
+
 1.Paste the console output you saved at the end of step 3.C (2 points)
 
 mmarse@Michaels-MacBook-Air assignment2 % git push https://github.com/mlm23e/assignment2.git
